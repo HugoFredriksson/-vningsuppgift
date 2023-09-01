@@ -20,14 +20,12 @@ val = int.Parse(Console.ReadLine());
 
 if (val == 1)
 {
-    circ = (height + width) * 2;
-    area = height * width;
+    Rectangle b = new Rectangle(height, width);
 
-    Console.WriteLine("Omkretsen är: "+ circ +" och arean är: "+ area);
+    Console.WriteLine("Omkretsen är: " + b.rCirc() + " och arean är: " + b.rArea());
 } else if (val == 2) 
 {
     Triangle a = new Triangle(height, width);
-    a.Area();
-    a.Circ();
+
     Console.WriteLine("Omkretsen är "+ a.Circ() +" och arean är "+ a.Area());
 }

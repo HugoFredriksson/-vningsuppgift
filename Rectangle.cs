@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ÖvningsUppgifter
@@ -12,6 +13,14 @@ namespace ÖvningsUppgifter
         {
             this.width = width;
             this.height = height;
+        }
+        public int rArea()
+        {
+            return width * height;
+        }
+        public int rCirc() 
+        {
+            return (width + height) * 2;
         }
     }
 }
