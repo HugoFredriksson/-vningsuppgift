@@ -26,5 +26,8 @@ if (val == 1)
     Console.WriteLine("Omkretsen är: "+ circ +" och arean är: "+ area);
 } else if (val == 2) 
 {
-    
+    Triangle a = new Triangle(height, width);
+    a.Area();
+    a.Circ();
+    Console.WriteLine("Omkretsen är "+ a.Circ() +" och arean är "+ a.Area());
 }
