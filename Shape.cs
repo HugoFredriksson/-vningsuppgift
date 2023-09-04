@@ -16,7 +16,18 @@ namespace ÖvningsUppgifter
             this.width = width;
             this.height = height;
         }
+
         public int Width { get { return width; } }
         public int Height { get { return height; } }
+
+        public virtual int Area()
+        {
+            return 0;
+        }
+
+        public virtual int Circumference()
+        {
+            return 0;
+        }
     }
 }

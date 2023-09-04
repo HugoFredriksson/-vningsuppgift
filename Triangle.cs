@@ -14,13 +14,15 @@ namespace ÖvningsUppgifter
             this.height = height;
         }
 
-        public int Area()
+        public override int Area()
         {
-            return (width * height) / 2;
+            int area = (width * height) / 2;
+            return area;
         }
-        public float Circ()
+        public override int Circumference()
         {
-            return (int)Math.Sqrt((width * width) + (height * height)) + width + height;
+            int circumference = (int)Math.Sqrt((width * width) + (height * height)) + width + height;
+            return circumference; 
         }
     }
 }

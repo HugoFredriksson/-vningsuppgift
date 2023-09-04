@@ -1,11 +1,11 @@
 ﻿using ÖvningsUppgifter;
+using System.Diagnostics;
+using System.Formats.Asn1;
 
 int height;
 int width;
 int val;
-int circ = 0;
-int area = 0;
-
+Shape shape = null;
 Console.WriteLine("Ange höjd:");
 
 height = int.Parse(Console.ReadLine());
@@ -20,12 +20,11 @@ val = int.Parse(Console.ReadLine());
 
 if (val == 1)
 {
-    Rectangle b = new Rectangle(height, width);
+    shape = new Rectangle(height, width);
 
-    Console.WriteLine("Omkretsen är: " + b.rCirc() + " och arean är: " + b.rArea());
 } else if (val == 2) 
 {
-    Triangle a = new Triangle(height, width);
-
-    Console.WriteLine("Omkretsen är "+ a.Circ() +" och arean är "+ a.Area());
+    shape = new Triangle(height, width);
 }
+Console.WriteLine("Arean är: "+ shape.Area());
+Console.WriteLine("Omkretsen är: " + shape.Circumference());

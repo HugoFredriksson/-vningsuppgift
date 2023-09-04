@@ -14,13 +14,15 @@ namespace ÖvningsUppgifter
             this.width = width;
             this.height = height;
         }
-        public int rArea()
+        public override int Area()
         {
-            return width * height;
+            int area = width * height;
+            return area;
         }
-        public int rCirc() 
+        public override int Circumference()
         {
-            return (width + height) * 2;
+            int area = (width + height) * 2;
+            return area;
         }
     }
 }
