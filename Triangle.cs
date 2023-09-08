@@ -8,18 +8,21 @@ namespace ÖvningsUppgifter
 {
     internal class Triangle : IShape
     {
-        public Triangle(int width, int height) : base(width, height) 
+        int width = 0;
+        int height = 0;
+
+        public Triangle(int width, int height)
         {
             this.width = width;
             this.height = height;
         }
 
-        public override int Area()
+        public int Area()
         {
             int area = (width * height) / 2;
             return area;
         }
-        public override int Circumference()
+        public int Circumference()
         {
             int circumference = (int)Math.Sqrt((width * width) + (height * height)) + width + height;
             return circumference; 
