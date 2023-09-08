@@ -7,19 +7,23 @@ using System.Threading.Tasks;
 
 namespace ÖvningsUppgifter
 {
-    internal class Rectangle: Shape
+    internal class Rectangle: IShape
     {
-        public Rectangle(int width, int height) : base(width, height) 
+
+        int width = 0;
+        int height = 0;
+
+        public Rectangle(int width, int height)
         {
-            this.width = width;
-            this.height = height;
+           this.width = width;
+           this.height = height;
         }
-        public override int Area()
+        public int Area()
         {
             int area = width * height;
             return area;
         }
-        public override int Circumference()
+        public int Circumference()
         {
             int area = (width + height) * 2;
             return area;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ÖvningsUppgifter
 {
-    internal class Triangle: Shape
+    internal class Triangle : IShape
     {
         public Triangle(int width, int height) : base(width, height) 
         {
